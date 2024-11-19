@@ -1,0 +1,80 @@
+/* CSS VARIABLES */
+:root {
+  --light: #fff;
+  --dark: #000;
+  --shadow: #00000029;
+  --gray: #707070;
+  --softGray: #888888;
+}
+/* STYLES COMPONENTS */
+
+/* header */
+.header-page {
+  text-align: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--gray);
+  color: var(--light);
+  height: 420px;
+  padding: 50px 15px;
+}
+
+.header-page::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 200px;
+  background-color: var(--light);
+  clip-path: polygon(0% 0%, 0% 100%, 100% 100%, 0% 0%);
+}
+
+.header-page__title {
+  font-size: 2rem;
+}
+
+.header-page__strong {
+  font-size: 4rem;
+  font-weight: 800;
+  display: block;
+}
+
+.header-page__text {
+  font-size: 1.4rem;
+}
+
+/* menu */
+.menu {
+  margin-top: 40px;
+}
+
+.menu__options {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.menu__item {
+  background-color: var(--light);
+  border: 1px solid var(--shadow);
+  border-radius: 5px;
+  text-align: center;
+  z-index: 10;
+}
+
+.menu__link {
+  display: block;
+  width: 160px;
+  height: 40px;
+  line-height: 40px;
+  color: var(--softGray);
+}
+
+.menu__item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 15px 40px 0 var(--shadow);
+}
