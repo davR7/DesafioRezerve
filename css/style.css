@@ -49,9 +49,16 @@
   color: var(--gray);
   border-radius: 5px;
   background-color: var(--light);
-  width: 260px;
+  width: 100%;
+  max-width: 260px;
   height: 39px;
-  margin-top: 20px;
+  margin-top: 40px;
+}
+
+.btn:hover {
+  transform: scale(1.01);
+  box-shadow: 0 2px 4px 0 var(--shadow);
+  cursor: pointer;
 }
 
 .text-center {
@@ -223,6 +230,40 @@
 .shared__text {
   color: var(--softGray);
   margin: 20px 0;
+}
+
+/* product */
+
+.product {
+  margin-top: 50px;
+}
+
+/* cards */
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  font-size: 1.4rem;
+  color: var(--softGray);
+}
+
+.card__values > p {
+  padding: 2px 0;
+}
+
+.card__price {
+  color: var(--gray);
+  font-weight: 800;
+  font-size: 1.6rem;
+}
+
+.card__img {
+  width: 100%;
 }
 
 /* footer */
