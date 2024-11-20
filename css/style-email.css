@@ -1,0 +1,7 @@
+.friend-suggestions {
+  color: var(--softGray);
+}
+
+.friend-suggestions__title {
+  font-size: 2rem;
+}
