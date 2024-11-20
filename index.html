@@ -72,6 +72,7 @@
               type="text"
               class="simple-form__input"
               id="form-input-name"
+              required
             />
           </div>
           <div class="simple-form__control">
@@ -82,11 +83,17 @@
               type="text"
               class="simple-form__input"
               id="form-input-email"
+              required
             />
           </div>
           <div class="simple-form__control">
             <label for="form-input-cpf" class="simple-form__label">CPF:</label>
-            <input type="text" class="simple-form__input" id="form-input-cpf" />
+            <input
+              type="text"
+              class="simple-form__input"
+              id="form-input-cpf"
+              required
+            />
           </div>
           <div class="simple-form__radio">
             <div class="simple-form__control mr-1">
@@ -110,6 +117,17 @@
           </div>
           <button class="simple-form__btn" type="submit">Enviar</button>
         </form>
+      </section>
+      <section class="product" id="product">
+        <h3 class="product__title heading-line text-center">
+          <span>Sua seleção especial</span>
+        </h3>
+        <div class="cards" ev-product-grid></div>
+        <div class="btn-wapper text-center">
+          <button class="btn" type="button" ev-load-more>
+            Ainda mais produtos
+          </button>
+        </div>
       </section>
       <section class="shared text-center" id="shared">
         <h3 class="shared__title heading-line">
@@ -142,7 +160,7 @@
               />
             </div>
           </div>
-          <button class="btn" type="submit">Enviar Agora</button>
+          <button class="btn" type="submit">Envie agora</button>
         </form>
       </section>
     </main>
