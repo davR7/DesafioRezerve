@@ -17,3 +17,7 @@ Este projeto tem como objetivo desenvolver uma landing page responsiva e moderna
 - HTML: HTML5 semântico.
 - CSS: Estilização e layout responsivo.
 - JavaScript: Busca de dados da API e criação contéudo de forma dinâmica
+
+## Projeto Online
+
+https://fluffy-meerkat-5aa3c5.netlify.app/
